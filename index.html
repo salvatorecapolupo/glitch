@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLITCH 3.0 - Monologo Teatrale</title>
+    <style>
+        :root {
+            --bg-color: #0a0a0a;
+            --text-color: #00ff41; /* Classic Terminal Green */
+            --accent-color: #008f11;
+            --font-main: 'Courier New', Courier, monospace;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            border: 1px solid var(--accent-color);
+            padding: 30px;
+            box-shadow: 0 0 15px rgba(0, 255, 65, 0.1);
+        }
+
+        header {
+            border-bottom: 1px solid var(--accent-color);
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            border-left: 4px solid var(--text-color);
+            padding-left: 10px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .contact-box {
+            background: rgba(0, 143, 17, 0.05);
+            padding: 20px;
+            border: 1px dashed var(--accent-color);
+        }
+
+        a {
+            color: var(--text-color);
+            text-decoration: underline;
+        }
+
+        a:hover {
+            background: var(--text-color);
+            color: var(--bg-color);
+        }
+
+        .quote {
+            font-style: italic;
+            text-align: center;
+            margin-top: 60px;
+            opacity: 0.7;
+            font-size: 0.85rem;
+            border-top: 1px solid #333;
+            padding-top: 20px;
+        }
+
+        .blink {
+            animation: blinker 1s linear infinite;
+        }
+
+        @keyframes blinker {
+            50% { opacity: 0; }
+        }
+
+        ul {
+            list-style-type: "> ";
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>GLITCH 3.0 <span class="blink">_</span></h1>
+        <p class="subtitle">Monologo teatrale crossmediale di Salvatore Capolupo</p>
+    </header>
+
+    <section id="synopsis">
+        <h2>[SOGGETTO]</h2>
+        <p>In scena il rapporto tra Alan, ricercatore informatico, e Malcom, l’intelligenza artificiale da lui creata. Un’indagine sui confini tra controllo umano e autonomia algoritmica.</p>
+        <p>Tematiche estratte dal log di sistema: Coscienza artificiale, sorveglianza digitale, capitalismo dei dati e transumanesimo.</p>
+    </section>
+
+<section class="bio-section">
+        <h2>[PROFILO_AUTORE] - Salvatore Capolupo</h2>
+        <p>
+          Sono laureato in ingegneria informatica, docente di informatica, 
+          divulgatore e autore teatrale. Vivo e lavoro a Roma. 
+          Possiedo esperienza come teatrante da quando avevo 16 anni, vincendo
+          vari premi come attore.  
+        </p>
+        
+        <h3>Profilo Professionale</h3>
+        <ul>
+            <li>Laureato in Ingegneria Informatica, con Dottorato in Ricerca Operativa (Unical).</li>
+            <li>Consulente informatico e SEO freelance fino al 2025.</li>
+            <li>Docente di informatica presso scuola secondarie superiori.</li>
+            <li>Divulgatore software open source (PHP, Python, Java, SQL) e curatore del progetto <a href="https://capolooper.wordpress.com" rel="me">Capolooper</a>".</li>
+        </ul>
+
+        <h3>Produzione Saggistica & Artistica</h3>
+        <ul>
+            <li><strong>Tecnofobia (2021):</strong> Raccolta di saggi sull'effetto del web e dei social sul mondo reale.</li>
+            <li><strong>Tecnocrazia (2023):</strong> Saggio sulle nuove tecnologie (inclusa la IA) come forma di governance.</li>
+            [cite_start]<li><strong>Teatro:</strong> Oltre a GLITCH 3.0, è autore dell'atto unico di genere comico/surreale "L'erede".</li>
+        </ul>
+    </section>
+  
+    <section id="details">
+        <h2>[INFO_SESSIONE]</h2>
+        <div class="info-grid">
+            <div>
+                Prossima data:
+                <strong>LOCATION:</strong><br>
+                Piccolo Teatro di Prova<br>
+                Via del Campo 16c, Roma<br>
+                (Metro C Alessandrino/Centocelle)
+            </div>
+            <div>
+                <strong>DATA/ORA:</strong><br>
+                30 e 31 gennaio 2026<br>
+                Ore 21:30
+            </div>
+            <div>
+                <strong>ACCESSO:</strong><br>
+                Capienza: 30 posti/serata <br>
+                Venerdì 30: circa 20 posti disponibili, <br>
+                Sabato 31: circa 15 posti disponibili (stima)
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>[PRENOTAZIONI]</h2>
+        <div class="contact-box">
+            <p>Si consiglia la prenotazione <u>entro due giorni al più</u> dall'evento:</p>
+            <ul>
+                <li>Email: <a href="mailto:s.capolupo@gmail.com">s.capolupo@gmail.com</a></li>
+                <li>WhatsApp (prenotazioni qui): <a href="https://wa.me/393914141334">391-4141334</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="quote">
+        "<em>Il futuro della fantascienza? Ci viviamo già dentro.</em>" <br>
+        — William Gibson
+    </footer>
+</div>
+
+</body>
+</html>

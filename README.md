@@ -1,8 +1,6 @@
 # glitch
 Informazioni su GLITCH, lo spettacolo crossmediale di Salvatore Capolupo. 
 
-http://salvatorecapolupo.github.io/glitch
-
 **GLITCH 3.0: L’Intelligenza Artificiale sale a teatro!** 🎭🤖
 
 Scopri **GLITCH**, il monologo crossmediale di Salvatore Capolupo che esplora il confine tra uomo e algoritmo. 💻✨ 

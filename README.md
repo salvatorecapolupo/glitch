@@ -10,4 +10,4 @@ Un viaggio tra coscienza artificiale, dati e futuro, dove il rapporto tra un ric
 📍 **In scena a Roma – Gennaio 2026**
 🔗 **Info e prenotazioni:** https://salvatorecapolupo.github.io/glitch/
 
-#Teatro #IA #Glitch #Innovazione #SalvatoreCapolupo #Cyberpunk #RomaTeatro
+#Teatro #IA #Glitch #Innovazione #SalvatoreCapolupo #Cyberpunk

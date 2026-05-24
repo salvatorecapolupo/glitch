@@ -78,6 +78,13 @@
 
         .info-grid strong { color: #fff; }
 
+        .tba-box {
+            border: 1px dashed var(--term-green);
+            padding: 15px;
+            margin-top: 10px;
+            opacity: 0.7;
+        }
+
         .contact-box {
             border: 1px dashed var(--term-green);
             padding: 15px;
@@ -96,7 +103,22 @@
             text-align: center;
             border-top: 1px solid var(--term-dim);
             padding-top: 20px;
-            color: #00aa2e;  /* <-- era var(--term-dim) = #003b00 */
+            color: #00aa2e;
+        }
+
+        /* Mappa */
+        .map-wrapper {
+            margin-top: 15px;
+            border: 1px solid var(--term-dim);
+            overflow: hidden;
+        }
+
+        .map-wrapper iframe {
+            display: block;
+            width: 100%;
+            height: 380px;
+            border: 0;
+            filter: grayscale(1) invert(1) hue-rotate(100deg) brightness(0.7) contrast(1.2);
         }
 
         /* Responsive */
@@ -118,32 +140,60 @@
 
     <section id="synopsis">
         <h2>[SOGGETTO_SISTEMA]</h2>
-        <p>In scena il rapporto tra Alan, ricercatore informatico, e Malcom, l’intelligenza artificiale da lui creata.</p>
+        <p>In scena il rapporto tra Alan, ricercatore informatico, e Malcom, l'intelligenza artificiale da lui creata.</p>
         <p>TAGS: Coscienza_artificiale, sorveglianza_digitale, capitalismo_dati, transumanesimo.</p>
-        <p>> Leggi copione: <a target="_blank" href="https://capolooper.wordpress.com/wp-content/uploads/2026/01/glitch-3.0.docx">glitch-3.0.docx</a></p>
+        <p>&gt; Leggi copione: <a target="_blank" href="https://capolooper.wordpress.com/wp-content/uploads/2026/01/glitch-3.0.docx">glitch-3.0.docx</a></p>
     </section>
 
     <section id="details">
-        <h2>[DATE_PROSSIME_INPUT]</h2>
+        <h2>[DATE_PROSSIME]</h2>
         <div class="info-grid">
-            <p><strong>QUANDO:</strong> 15 Maggio 2026 | <strong>DOVE:</strong> Parrot, Roma (San Lorenzo) ( <a href="https://www.eventbrite.it/e/biglietti-prenotazioni-glitch-30-monologo-crossmediale-1988037723347">prenota posto</a> )</p>
-            <p><strong>QUANDO:</strong> 22 Maggio 2026 | <strong>DOVE:</strong> Jesi (AN), Festival #Eterotopie 2026</p>
+            <p><strong>QUANDO:</strong> 22 Maggio 2026 | <strong>DOVE:</strong> Jesi (AN), Festival #Tecnotopie 2026</p>
+        </div>
+        <div class="tba-box">
+            <p><strong>PROSSIMA DATA:</strong> TBA &mdash; nuova data in arrivo. Seguici per aggiornamenti.</p>
         </div>
     </section>
 
     <section id="history">
         <h2>[LOG_DATE_STORICO]</h2>
         <ul>
+            <li>15 Maggio 2026: Parrot - Roma (San Lorenzo)</li>
             <li>30/31 Gennaio 2026: Piccolo Teatro di Prova - Roma (Alessandrino)</li>
             <li>04 Agosto 2025: Teatro Il Piccolo - Soveria Mannelli (CZ)</li>
+            <li>Aprile 2025: Defrag_ - Roma (Glitch 1.0)</li>
         </ul>
+    </section>
+
+    <section id="map">
+        <h2>[GEOLOCALIZZAZIONE_REPLICHE]</h2>
+        <div class="map-wrapper">
+            <iframe
+                title="Luoghi di Glitch"
+                loading="lazy"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=12.0%2C38.5%2C14.5%2C44.2&layer=mapnik&marker=41.9487779%2C12.5311552"
+            ></iframe>
+        </div>
+        <div style="margin-top:12px; border:1px solid var(--term-dim); padding:12px; font-size:0.85rem;">
+            <p style="margin:0 0 8px 0; color:#fff;">// NODI_RETE:</p>
+            <ul style="margin:0;">
+                <li><a href="https://maps.google.com/?q=Via+delle+Isole+Curzolane+75,Roma" target="_blank">Defrag_ — Roma, Via delle Isole Curzolane 75</a> <span style="color:var(--term-dim)">[2025]</span></li>
+                <li><a href="https://maps.google.com/?q=Teatro+Il+Piccolo+Soveria+Mannelli" target="_blank">Teatro Il Piccolo — Soveria Mannelli (CZ)</a> <span style="color:var(--term-dim)">[2025]</span></li>
+                <li><a href="https://maps.google.com/?q=Via+del+Campo+16c,Roma" target="_blank">Piccolo Teatro di Prova — Roma, Alessandrino</a> <span style="color:var(--term-dim)">[2026]</span></li>
+                <li><a href="https://maps.google.com/?q=Via+dei+Bruzi+6,Roma" target="_blank">Parrot — Roma, San Lorenzo</a> <span style="color:var(--term-dim)">[2026]</span></li>
+                <li><a href="https://maps.google.com/?q=Libreria+Sabot+Jesi" target="_blank">Festival #Tecnotopie — Jesi (AN)</a> <span style="color:var(--term-dim)">[2026]</span></li>
+            </ul>
+        </div>
+        <p style="font-size:0.75rem; opacity:0.5; margin-top:6px;">> Roma (Tufello) · Roma (Alessandrino) · Roma (San Lorenzo) · Soveria Mannelli (CZ) · Jesi (AN)</p>
     </section>
 
     <section id="bio">
         <h2>[OPERATORE_INFO]</h2>
         <p>Salvatore Capolupo: Ing. Informatico / Docente / Divulgatore / Autore Teatrale.</p>
         <p>Saggistica: "Tecnofobia" (2021), "Tecnocrazia" (2023), "Tecnovisioni" (2026) (in uscita). Teatro: "L'erede"/"Glitch".
-        Vedi: <a href="https://capolooper.wordpress.com/">capolooper.wordpress.com</a></p>
+        <a href="https://capolooper.wordpress.com/"> capolooper.wordpress.com </a> 
+        <a href="https://www.amazon.it/stores/author/B00RUC7VR6"> Pubblicazioni saggi / fiction </a> 
+        </p>
     </section>
 
     <section id="contact">
@@ -162,23 +212,8 @@
     </footer>
 </div>
 
-<script type="application/ld-json">
+<script type="application/ld+json">
 [
-  {
-    "@context": "https://schema.org",
-    "@type": "TheaterEvent",
-    "name": "GLITCH 3.0",
-    "startDate": "2026-05-15T21:30",
-    "location": {
-      "@type": "Place",
-      "name": "Parrot",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Roma",
-        "addressRegion": "RM"
-      }
-    }
-  },
   {
     "@context": "https://schema.org",
     "@type": "TheaterEvent",
@@ -186,7 +221,7 @@
     "startDate": "2026-05-22T21:00",
     "location": {
       "@type": "Place",
-      "name": "Festival #Eterotopie",
+      "name": "Festival #Tecnotopie",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Jesi",

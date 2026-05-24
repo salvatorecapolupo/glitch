@@ -169,11 +169,41 @@
     <section id="map">
         <h2>[GEOLOCALIZZAZIONE_REPLICHE]</h2>
         <div class="map-wrapper">
-            <iframe
-                title="Luoghi di Glitch"
-                loading="lazy"
-                src="https://www.openstreetmap.org/export/embed.html?bbox=12.0%2C38.5%2C14.5%2C44.2&layer=mapnik&marker=41.9487779%2C12.5311552"
-            ></iframe>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"/>
+<div id="glitch-map" style="height:380px; border:1px solid #003b00;"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+(function() {
+    var map = L.map('glitch-map', { zoomControl: true }).setView([41.5, 13.5], 6);
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+        attribution: '&copy; <a href="https://carto.com/">CARTO</a>',
+        maxZoom: 18
+    }).addTo(map);
+
+    var icon = L.divIcon({
+        className: '',
+        html: '<div style="width:12px;height:12px;background:#00ff41;border:2px solid #fff;box-shadow:0 0 8px #00ff41;"></div>',
+        iconSize: [12, 12],
+        iconAnchor: [6, 6]
+    });
+
+    var luoghi = [
+        { lat: 41.9487779, lng: 12.5311552, label: "Defrag_ — Roma (2025)" },
+        { lat: 39.0818189, lng: 16.3726208, label: "Teatro Il Piccolo — Soveria Mannelli (2025)" },
+        { lat: 41.8763454, lng: 12.5753890, label: "Piccolo Teatro di Prova — Roma (2026)" },
+        { lat: 41.8934984, lng: 12.5150074, label: "Parrot — Roma (2026)" },
+        { lat: 43.5232,    lng: 13.2440,    label: "Festival #Tecnotopie — Jesi (2026)" }
+    ];
+
+    luoghi.forEach(function(l) {
+        L.marker([l.lat, l.lng], { icon: icon })
+            .addTo(map)
+            .bindPopup('<span style="font-family:monospace;color:#00ff41;background:#050505;padding:4px 8px;display:block;">' + l.label + '</span>');
+    });
+})();
+</script>
+            
         </div>
         <div style="margin-top:12px; border:1px solid var(--term-dim); padding:12px; font-size:0.85rem;">
             <p style="margin:0 0 8px 0; color:#fff;">// NODI_RETE:</p>

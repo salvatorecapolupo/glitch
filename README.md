@@ -7,7 +7,7 @@ Scopri **GLITCH**, il monologo crossmediale di Salvatore Capolupo che esplora il
 
 Un viaggio transumano tra coscienza artificiale, dati e futuro, dove il rapporto tra un ricercatore e la sua IA svela i segreti della nostra era digitale. 🌐👁️
 
-📍 **In scena a Roma – Gennaio 2026**
+📍 **Nuove date in corso di definizione - 2027**
 🔗 **Info e prenotazioni:** https://salvatorecapolupo.github.io/glitch/
 
 #Teatro #IA #Glitch #Innovazione #SalvatoreCapolupo #Cyberpunk
